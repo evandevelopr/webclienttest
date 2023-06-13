@@ -1,5 +1,5 @@
 const sub = (a, b) => a - b;
-const div = (a, b) => a / b;
+const div = (a, b) => a - b;
 
 const yay = () => {};
 const yay2 = () => {};
