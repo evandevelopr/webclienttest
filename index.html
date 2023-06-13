@@ -1,0 +1,25 @@
+<html>
+
+<head>
+  <script type="module">
+    import {add, mul} from "./lib.js";
+    import {sub, div} from "./lib2.js";
+
+
+    const appDiv = document.getElementById('app');
+
+    appDiv.appendChild(document.createTextNode(`2 + 3 = ${add(2, 3)}`));
+    appDiv.appendChild(document.createElement('br'));
+    appDiv.appendChild(document.createTextNode(`2 * 3 = ${mul(2, 3)}`));
+    appDiv.appendChild(document.createElement('br'));
+    appDiv.appendChild(document.createTextNode(`2 - 3 = ${sub(2, 3)}`));
+    appDiv.appendChild(document.createElement('br'));
+    appDiv.appendChild(document.createTextNode(`2 / 3 = ${div(2, 3)}`));
+    appDiv.appendChild(document.createElement('br'));
+
+  </script>
+</head>
+<body>
+<div id="app"></div>
+</body>
+</html>
